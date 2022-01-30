@@ -1,0 +1,22 @@
+/* Your styles go here... */
+.SidePanel {
+  width: 30%;
+  height: inherit;
+  background-color: #253847;
+  padding: 20px 5px;
+  box-sizing: border-box;
+}
+
+ul {
+  color: #d0dbe5;
+  font-size: 12px;
+  padding-inline-start: 8px;
+  margin: 6px;
+}
+li {
+  margin: 3px;
+}
+
+.SidePanelSection {
+  margin: 15px 15px;
+}
