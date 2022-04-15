@@ -4,12 +4,16 @@
 
 .Resume {
   display: flex;
-  width: 50%;
+  width: 210mm;
+  min-height: 297mm;
   margin: auto auto;
 }
 
 @media print {
-  .Resume {
+  .App {
+    -webkit-print-color-adjust: exact;
+  }
+  #download {
     display: none;
   }
 }
