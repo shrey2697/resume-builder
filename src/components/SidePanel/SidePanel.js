@@ -36,6 +36,7 @@ export const SidePanel = () => {
           {Object.keys(SidePanelData.contact).map((item) => {
             return (
               <SocialMedia
+                key={item}
                 icon={SocialMediaIcon[item]}
                 link={SidePanelData.contact[item]}
               />
@@ -48,7 +49,7 @@ export const SidePanel = () => {
           <Heading> skills </Heading>
           <ul>
             {SidePanelData.skills.map((item) => (
-              <li>{item}</li>
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </div>
@@ -58,6 +59,7 @@ export const SidePanel = () => {
         {SidePanelData.articles.map((item) => {
           return (
             <div
+              key={item.heading}
               style={{ fontSize: "12px", color: "#d0dbe5", margin: "10px 0" }}
             >
               <strong>{item.heading}</strong>

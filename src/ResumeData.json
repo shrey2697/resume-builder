@@ -1,0 +1,95 @@
+{
+  "sidepanel": {
+    "picture": {
+      "url": "https://avatars.githubusercontent.com/u/48084433?v=4"
+    },
+    "contact": {
+      "mail": "shrey2697@gmail.com",
+      "phone": "7983085318",
+      "location": "Bengaluru, India",
+      "github": "https://github.com/shrey2697",
+      "linkedin": "https://www.linkedin.com/in/shrey-tiwari-9899a9137/"
+    },
+    "skills": [
+      "Javascript",
+      "React",
+      "Vue",
+      "React Native",
+      "Node",
+      "HTML & CSS",
+      "GraphQL",
+      "Kubernetes"
+    ],
+    "articles": [
+      {
+        "heading": "React to Vue - A Non-Intimidating Journey",
+        "body": "The journey of moving from React to Vue and things learned along the way"
+      },
+      {
+        "heading": "Implementing External Widgets",
+        "body": "Embedding an independent component in a third-party application"
+      }
+    ]
+  },
+  "content": {
+    "name": "Shrey Tiwari",
+    "title": "Software Engineer",
+    "summary": "I am a professional software developer who loves to make awesome web and mobile applications and is fascinated by fluidic eye-catching designs.",
+    "experience": [
+      {
+        "title": "Senior Software Engineer",
+        "timespan": "Feb 2022 - Present",
+        "description": "I'm working here as a Fullstack Developer and my responsibilities includes understanding the requirement, coming up with a unique and effective solution, and create an application that benefits the users.",
+        "company": "Visa Inc."
+      },
+      {
+        "title": "Software Engineer - Senior Software Engineer",
+        "timespan": "Feb 2019 - Jan 2022",
+        "description": "I worked here as a Frontend Developer and my primary responsibility included building end-to-end web/mobile solutions to solve business needs in an innovative manner.",
+        "company": "Geekyants India Pvt Ltd"
+      }
+    ],
+    "education": [
+      {
+        "title": "B.Tech Computer Science Engineering",
+        "timespan": "Jul 2015 - May 2019",
+        "description": "Pursued a specialized CS course on Cloud Computing and Virtualization Technology, with added interest in Computer Vision and Image Processing.",
+        "college": "UPES, Dehradun"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Car Subscription App",
+        "description": "Built a web app that enables car dealerships to launch their own vehicle subscription service, providing their customers an alternative to car ownership.",
+        "role": "Frontend Developer"
+      },
+      {
+        "name": "Facility Operating System",
+        "description": "Built a web app to allow the management of the facilities associated with the manufacturing, charging, servicing of electric vehicles.",
+        "role": "Frontend Developer"
+      },
+      {
+        "name": "Tusker",
+        "description": "To be added",
+        "role": "Frontend Developer"
+      }
+    ],
+    "side_projects": [
+      {
+        "name": "Resume Builder",
+        "description": "A React App that creates a resume (including this one) using a JSON file",
+        "url": "https://github.com/shrey2697/resume-builder"
+      },
+      {
+        "name": "Spawn React Component",
+        "description": "A package that creates a React Component in the current working directory.",
+        "url": "https://www.npmjs.com/package/spawn-react-component"
+      },
+      {
+        "name": "React Payment Card",
+        "description": "A beautiful open source React component that creates a virtual avatar of your credit/debit card to enhance the user experience.",
+        "url": "https://github.com/shrey2697/react-payment-card"
+      }
+    ]
+  }
+}
