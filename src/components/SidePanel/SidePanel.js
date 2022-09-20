@@ -7,6 +7,7 @@ import { Location } from "../Location";
 import { Linkedin } from "../Linkedin";
 import { SocialMedia } from "../SocialMedia";
 import data from "../../ResumeData.json";
+import Photo from "../../photo.png";
 import "./styles.css";
 
 const SocialMediaIcon = {
@@ -23,10 +24,11 @@ export const SidePanel = () => {
     <div className="SidePanel">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
-          src={SidePanelData.picture.url}
+          src={Photo}
           alt="profile-pic"
-          width={"60%"}
-          style={{ borderRadius: "50%", border: "solid 2px white" }}
+          width={"150px"}
+          height="150px"
+          style={{ borderRadius: "100%", border: "solid 2px white" }}
         />
       </div>
 
@@ -39,9 +41,20 @@ export const SidePanel = () => {
                 key={item}
                 icon={SocialMediaIcon[item]}
                 link={SidePanelData.contact[item]}
+                item={item}
               />
             );
           })}
+        </div>
+      </div>
+      <div className="SidePanelSection">
+        <div>
+          <Heading> proficiency </Heading>
+          <ul>
+            {SidePanelData?.proficiency.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </div>
       </div>
       <div className="SidePanelSection">
@@ -54,20 +67,24 @@ export const SidePanel = () => {
           </ul>
         </div>
       </div>
-      <div className="SidePanelSection">
-        <Heading>Articles</Heading>
-        {SidePanelData.articles.map((item) => {
-          return (
-            <div
-              key={item.heading}
-              style={{ fontSize: "12px", color: "#d0dbe5", margin: "10px 0" }}
-            >
-              <strong>{item.heading}</strong>
-              <div>{item.body}</div>
-            </div>
-          );
-        })}
-      </div>
+      {SidePanelData.articles.length > 0 ? (
+        <div className="SidePanelSection">
+          <Heading>Articles</Heading>
+          {SidePanelData.articles.map((item) => {
+            return (
+              <div
+                key={item.heading}
+                style={{ fontSize: "12px", color: "#d0dbe5", margin: "10px 0" }}
+              >
+                <strong>{item.heading}</strong>
+                <div>{item.body}</div>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

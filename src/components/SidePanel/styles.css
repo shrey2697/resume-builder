@@ -2,7 +2,14 @@
 .SidePanel {
   width: 30%;
   height: inherit;
-  background-color: #253847;
+  background: rgb(83, 125, 159);
+  background: radial-gradient(
+    circle,
+    rgba(83, 125, 159, 1) 0%,
+    rgba(57, 86, 109, 1) 49%,
+    rgba(37, 56, 71, 1) 100%
+  );
+
   padding: 20px 5px;
   box-sizing: border-box;
 }

@@ -33,15 +33,7 @@ export const Content = () => {
           );
         })}
       </div>
-      <div className="SidePanelSection">
-        <Heading mode="Primary">Education</Heading>
-        <ContentSection
-          title={ContentData.education[0].title}
-          timespan={ContentData.education[0].timespan}
-          description={ContentData.education[0].description}
-          subtitle={ContentData.education[0].college}
-        />
-      </div>
+
       <div className="SidePanelSection">
         <Heading mode="Primary">Projects</Heading>
         {ContentData.projects.map((item) => {
@@ -55,17 +47,33 @@ export const Content = () => {
         })}
       </div>
       <div className="SidePanelSection">
-        <Heading mode="Primary">Open Source / Side Projects</Heading>
-        {ContentData.side_projects.map((item) => {
-          return (
-            <ContentSection
-              title={item.name}
-              description={item.description}
-              subtitle={item.url}
-            />
-          );
-        })}
+        <Heading mode="Primary">Education</Heading>
+        {ContentData.education.map((item) => (
+          <ContentSection
+            title={item.title}
+            timespan={item.timespan}
+            description={item.description}
+            subtitle={item.college}
+          />
+        ))}
       </div>
+      {ContentData.side_projects.length > 0 ? (
+        <div className="SidePanelSection">
+          <Heading mode="Primary">Open Source / Side Projects</Heading>
+          {ContentData.side_projects.map((item) => {
+            return (
+              <ContentSection
+                title={item.name}
+                description={item.description}
+                subtitle={item.url}
+                url
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

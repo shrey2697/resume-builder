@@ -4,92 +4,72 @@
       "url": "https://avatars.githubusercontent.com/u/48084433?v=4"
     },
     "contact": {
-      "mail": "shrey2697@gmail.com",
-      "phone": "7983085318",
+      "mail": "abhinavs2590@gmail.com",
+      "phone": "+91 9108934699",
       "location": "Bengaluru, India",
-      "github": "https://github.com/shrey2697",
-      "linkedin": "https://www.linkedin.com/in/shrey-tiwari-9899a9137/"
+      "linkedin": "https://www.linkedin.com/in/abhinav-shukla-930b1974/"
     },
     "skills": [
-      "Javascript",
-      "React",
-      "Vue",
-      "React Native",
-      "Node",
-      "HTML & CSS",
-      "GraphQL",
-      "Kubernetes"
+      "SAP SAC Analytics",
+      "SAP SAC Planning",
+      "Financial consolidation",
+      "IGPC",
+      "SAP Group reporting",
+      "Power BI",
+      "MS Excel",
+      "ITIL"
     ],
-    "articles": [
-      {
-        "heading": "React to Vue - A Non-Intimidating Journey",
-        "body": "The journey of moving from React to Vue and things learned along the way"
-      },
-      {
-        "heading": "Implementing External Widgets",
-        "body": "Embedding an independent component in a third-party application"
-      }
-    ]
+    "proficiency": [
+      "SAP Analytics cloud and Planning, Financial Consolidation (Functional) and S4 HANA Group Reporting."
+    ],
+    "articles": []
   },
   "content": {
-    "name": "Shrey Tiwari",
-    "title": "Software Engineer",
-    "summary": "I am a professional software developer who loves to make awesome web and mobile applications and is fascinated by fluidic eye-catching designs.",
+    "name": "Abhinav Shukla",
+    "title": "SAP SAC / Group Reporting Consultant",
+    "summary": "I am aspiring to achieve a challenging position in the field of SAP SAC / SAP Group Reporting as a techno functional consultant and upgrade my knowledge in EPM domain to grow and establish myself as an asset to the company.",
     "experience": [
       {
-        "title": "Senior Software Engineer",
-        "timespan": "Feb 2022 - Present",
-        "description": "I'm working here as a Fullstack Developer and my responsibilities includes understanding the requirement, coming up with a unique and effective solution, and create an application that benefits the users.",
-        "company": "Visa Inc."
-      },
-      {
-        "title": "Software Engineer - Senior Software Engineer",
-        "timespan": "Feb 2019 - Jan 2022",
-        "description": "I worked here as a Frontend Developer and my primary responsibility included building end-to-end web/mobile solutions to solve business needs in an innovative manner.",
-        "company": "Geekyants India Pvt Ltd"
+        "description": "9 Years of experience in Group Reporting with work on build and support related activities in SAP BOFC and S4 HANA Group Reporting and 1+ Year Experience is SAC BI and Planning."
       }
     ],
     "education": [
       {
-        "title": "B.Tech Computer Science Engineering",
-        "timespan": "Jul 2015 - May 2019",
-        "description": "Pursued a specialized CS course on Cloud Computing and Virtualization Technology, with added interest in Computer Vision and Image Processing.",
-        "college": "UPES, Dehradun"
+        "title": "B.Tech Electronics and Communication",
+        "timespan": "Aug 2008 - Apr 2012",
+        "description": "Grade: 65.4%",
+        "college": "Amity University"
+      },
+      {
+        "title": "Class XII",
+        "timespan": "Apr 2007 - Mar 2008",
+        "description": "Grade: 86%",
+        "college": "Dr. VSEC-ISC"
+      },
+      {
+        "title": "Class X",
+        "timespan": "Apr 2005 - Mar 2006",
+        "description": "Grade: 82%",
+        "college": "Dr. VSEC-ISC"
       }
     ],
     "projects": [
       {
-        "name": "Car Subscription App",
-        "description": "Built a web app that enables car dealerships to launch their own vehicle subscription service, providing their customers an alternative to car ownership.",
-        "role": "Frontend Developer"
+        "name": "Accenture",
+        "description": "Working on SAP Analytics Cloud project for client where I have worked on building Models (Analytic and Planning), stories, planning, Analytic designer, data wrangling and blending, measure calculations, smart assist features.",
+        "role": "Aug 2022 - Present"
       },
       {
-        "name": "Facility Operating System",
-        "description": "Built a web app to allow the management of the facilities associated with the manufacturing, charging, servicing of electric vehicles.",
-        "role": "Frontend Developer"
+        "name": "Report One - Shell PLC",
+        "description": "Worked on S4 HANA Group reporting project and performed activities related to ledger, COA, Versions, Managing Consolidation groups and Units, Model Hierarchies for Group Reporting, Managing Account master data, Configuring data Validations, Reclassifying data, Intercompany and Matrix eliminations and balance carryforward. Worked with SAC Team to build models and stories for BI and Planning and worked on features like input control, measure calculation, trellis and shapes, VDT, Forecast and rolling forecast, allocation and distribution, currency conversion, Prior to this I was working with the business and master data team on the advance memo changes to be incorporated in the SAP BOFC system for upcoming month and building the change (Advance memorandum changes) in development environment, transporting the changes to acceptance environment, conducting unit test in development environment",
+        "role": "Dec 2016 - Aug 2022"
       },
       {
-        "name": "Tusker",
-        "description": "To be added",
-        "role": "Frontend Developer"
+        "name": "GDRS, FINREP - HCL Technologies",
+        "description": "Worked on build and support related activities which involved working on dimension builder, reports, category scenario, rules and data entry restrictions, updating scopes. Setting up the BOFC system for monthly reporting and consolidations and taking care of data loads.",
+        "role": "Aug 2013 - Oct 2016"
       }
     ],
-    "side_projects": [
-      {
-        "name": "Resume Builder",
-        "description": "A React App that creates a resume (including this one) using a JSON file",
-        "url": "https://github.com/shrey2697/resume-builder"
-      },
-      {
-        "name": "Spawn React Component",
-        "description": "A package that creates a React Component in the current working directory.",
-        "url": "https://www.npmjs.com/package/spawn-react-component"
-      },
-      {
-        "name": "React Payment Card",
-        "description": "A beautiful open source React component that creates a virtual avatar of your credit/debit card to enhance the user experience.",
-        "url": "https://github.com/shrey2697/react-payment-card"
-      }
-    ]
+    "side_projects": []
   }
 }
