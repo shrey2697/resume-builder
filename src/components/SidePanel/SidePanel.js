@@ -37,7 +37,7 @@ export const SidePanel = ({ data }) => {
           <img
             src={
               Photo ||
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagq75EME1kWk3X5lPNhd25JNKIXuEjDzC98MIGp_8ww&s"
+              "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
             }
             alt="profile-pic"
             width={"150px"}
