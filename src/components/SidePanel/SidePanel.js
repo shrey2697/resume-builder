@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Github } from "../Github/Github";
 import { Heading } from "../Heading";
 import { Mail } from "../Mail";
@@ -6,8 +6,6 @@ import { Phone } from "../Phone";
 import { Location } from "../Location";
 import { Linkedin } from "../Linkedin";
 import { SocialMedia } from "../SocialMedia";
-import data from "../../ResumeData.json";
-import Photo from "../../photo.png";
 import "./styles.css";
 
 const SocialMediaIcon = {
@@ -18,18 +16,44 @@ const SocialMediaIcon = {
   linkedin: <Linkedin />,
 };
 
-export const SidePanel = () => {
+export const SidePanel = ({ data }) => {
   const SidePanelData = data.sidepanel;
+  const [uploadView, setUploadView] = useState(false);
+  const fileRef = useRef();
+  const [Photo, setPhoto] = useState(null);
   return (
     <div className="SidePanel">
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <img
-          src={Photo}
-          alt="profile-pic"
-          width={"150px"}
-          height="150px"
-          style={{ borderRadius: "100%", border: "solid 2px white" }}
-        />
+        <div
+          onMouseEnter={() => setUploadView(true)}
+          onMouseLeave={() => setUploadView(false)}
+          onClick={() => {
+            if (uploadView) {
+              fileRef.current.click();
+            }
+          }}
+          style={{ position: "relative" }}
+        >
+          <img
+            src={
+              Photo ||
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagq75EME1kWk3X5lPNhd25JNKIXuEjDzC98MIGp_8ww&s"
+            }
+            alt="profile-pic"
+            width={"150px"}
+            height="150px"
+            style={{ borderRadius: "100%", border: "solid 2px white" }}
+          />
+          {uploadView && <div className="upload-div">Upload Picture</div>}
+          <input
+            ref={fileRef}
+            type="file"
+            style={{ display: "none" }}
+            onChange={(e) => {
+              setPhoto(URL.createObjectURL(e.target.files[0]));
+            }}
+          />
+        </div>
       </div>
 
       <div className="SidePanelSection">

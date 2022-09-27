@@ -15,7 +15,7 @@
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
 }
 
 .Title {
@@ -28,6 +28,7 @@
 
 .SectionText {
   font-size: 13px;
+  white-space: pre-line;
   color: rgb(63, 63, 63);
 }
 .SectionTextMargin {

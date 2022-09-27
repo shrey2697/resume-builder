@@ -1,30 +1,63 @@
+import React, { useEffect, useState } from "react";
 import { Content } from "./components/Content";
 import "./App.css";
 import { SidePanel } from "./components/SidePanel/SidePanel";
-// import html2canvas from "html2canvas";
-// import jsPDF from "jspdf";
+import { JsonEditor as Editor } from "jsoneditor-react";
+import "jsoneditor-react/es/editor.min.css";
 
 function App() {
-  //TODO:
-  // function print() {
-  //   const input = document.getElementById("resume");
-  //   html2canvas(input).then((canvas) => {
-  //     const imgData = canvas.toDataURL("image/png");
-  //     const pdf = new jsPDF();
-  //     pdf.addImage(imgData, "JPEG", 0, 0);
-  //     // pdf.output('dataurlnewwindow');
-  //     pdf.save("download.pdf");
-  //   });
-  // }
+  const [resumeJson, setResumeJson] = useState(null);
+
   return (
     <div className="App">
-      <button id="download" onClick={() => window.print()}>
-        DOWNLOAD RESUME
-      </button>
-      <div className="Resume" id="resume">
-        <SidePanel />
-        <Content />
+      <div style={{ width: "45%" }} id="no-print">
+        <input
+          type={"file"}
+          accept=".json"
+          onChange={(e) => {
+            let file = e.target.files[0];
+            const reader = new FileReader();
+            reader.readAsText(file, "UTF-8");
+            reader.onload = function (e) {
+              setResumeJson(JSON.parse(e.target.result));
+            };
+            reader.onerror = function (e) {
+              alert("Error reading the file");
+            };
+          }}
+        />
+        <button
+          id="download"
+          onClick={() => {
+            const element = document.createElement("a");
+            const textFile = new Blob([JSON.stringify(resumeJson)], {
+              type: "text/plain",
+            });
+            element.href = URL.createObjectURL(textFile);
+            element.download = "userFile.json";
+            document.body.appendChild(element);
+            element.click();
+
+            window.print();
+          }}
+        >
+          SAVE CHANGES & DOWNLOAD RESUME
+        </button>
+        {resumeJson && (
+          <Editor
+            value={resumeJson}
+            onChange={(tt) => {
+              console.log(setResumeJson(tt));
+            }}
+          />
+        )}
       </div>
+      {resumeJson && (
+        <div className="Resume" id="resume">
+          <SidePanel data={resumeJson} />
+          <Content data={resumeJson} />
+        </div>
+      )}
     </div>
   );
 }

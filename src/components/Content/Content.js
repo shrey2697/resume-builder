@@ -1,10 +1,9 @@
 import React from "react";
-import data from "../../ResumeData.json";
 import { ContentSection } from "../ContentSection";
 import { Heading } from "../Heading";
 import "./styles.css";
 
-export const Content = () => {
+export const Content = ({ data }) => {
   // Your component logic goes here
   const ContentData = data.content;
   return (
@@ -42,6 +41,7 @@ export const Content = () => {
               title={item.name}
               description={item.description}
               subtitle={item.role}
+              timespan={item.timespan}
             />
           );
         })}
@@ -57,7 +57,7 @@ export const Content = () => {
           />
         ))}
       </div>
-      {ContentData.side_projects.length > 0 ? (
+      {ContentData.side_projects.length > 0 && (
         <div className="SidePanelSection">
           <Heading mode="Primary">Open Source / Side Projects</Heading>
           {ContentData.side_projects.map((item) => {
@@ -71,8 +71,6 @@ export const Content = () => {
             );
           })}
         </div>
-      ) : (
-        <div></div>
       )}
     </div>
   );

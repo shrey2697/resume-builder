@@ -27,3 +27,19 @@ li {
 .SidePanelSection {
   margin: 15px 15px;
 }
+
+.upload-div {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 222, 222, 0.5);
+  color: white;
+  font-weight: 800;
+  border-radius: 100%;
+  cursor: pointer;
+}
