@@ -83,6 +83,16 @@ export const SidePanel = ({ data }) => {
       </div>
       <div className="SidePanelSection">
         <div>
+          <Heading> certification </Heading>
+          <ul>
+            {SidePanelData?.certification.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div className="SidePanelSection">
+        <div>
           <Heading> skills </Heading>
           <ul>
             {SidePanelData.skills.map((item) => (
