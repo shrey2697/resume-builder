@@ -71,26 +71,30 @@ export const SidePanel = ({ data }) => {
           })}
         </div>
       </div>
-      <div className="SidePanelSection">
-        <div>
-          <Heading> proficiency </Heading>
-          <ul>
-            {SidePanelData?.proficiency.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+      {SidePanelData?.proficiency && (
+        <div className="SidePanelSection">
+          <div>
+            <Heading> proficiency </Heading>
+            <ul>
+              {SidePanelData?.proficiency.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-      <div className="SidePanelSection">
-        <div>
-          <Heading> certification </Heading>
-          <ul>
-            {SidePanelData?.certification.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+      )}
+      {SidePanelData?.certification && (
+        <div className="SidePanelSection">
+          <div>
+            <Heading> certification </Heading>
+            <ul>
+              {SidePanelData?.certification?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
+      )}
       <div className="SidePanelSection">
         <div>
           <Heading> skills </Heading>
@@ -101,7 +105,7 @@ export const SidePanel = ({ data }) => {
           </ul>
         </div>
       </div>
-      {SidePanelData.articles.length > 0 ? (
+      {SidePanelData.articles && (
         <div className="SidePanelSection">
           <Heading>Articles</Heading>
           {SidePanelData.articles.map((item) => {
@@ -116,8 +120,6 @@ export const SidePanel = ({ data }) => {
             );
           })}
         </div>
-      ) : (
-        <div></div>
       )}
     </div>
   );
