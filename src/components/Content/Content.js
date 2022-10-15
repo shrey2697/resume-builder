@@ -57,7 +57,7 @@ export const Content = ({ data }) => {
           />
         ))}
       </div>
-      {ContentData.side_projects.length > 0 && (
+      {ContentData.side_projects && (
         <div className="SidePanelSection">
           <Heading mode="Primary">Open Source / Side Projects</Heading>
           {ContentData.side_projects.map((item) => {
