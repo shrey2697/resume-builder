@@ -105,22 +105,6 @@ export const SidePanel = ({ data }) => {
           </ul>
         </div>
       </div>
-      {SidePanelData.articles && (
-        <div className="SidePanelSection">
-          <Heading>Articles</Heading>
-          {SidePanelData.articles.map((item) => {
-            return (
-              <div
-                key={item.heading}
-                style={{ fontSize: "12px", color: "#d0dbe5", margin: "10px 0" }}
-              >
-                <strong>{item.heading}</strong>
-                <div>{item.body}</div>
-              </div>
-            );
-          })}
-        </div>
-      )}
     </div>
   );
 };

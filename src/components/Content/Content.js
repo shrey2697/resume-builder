@@ -57,21 +57,6 @@ export const Content = ({ data }) => {
           />
         ))}
       </div>
-      {ContentData.side_projects && (
-        <div className="SidePanelSection">
-          <Heading mode="Primary">Open Source / Side Projects</Heading>
-          {ContentData.side_projects.map((item) => {
-            return (
-              <ContentSection
-                title={item.name}
-                description={item.description}
-                subtitle={item.url}
-                url
-              />
-            );
-          })}
-        </div>
-      )}
     </div>
   );
 };
